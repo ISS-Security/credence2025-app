@@ -40,6 +40,7 @@ module Credence
     ONE_MONTH = 30 * 24 * 60 * 60
     @redis_url = ENV.delete('REDISCLOUD_URL')
     SecureMessage.setup(ENV.delete('MSG_KEY'))
+    SignedMessage.setup(ENV.delete('SIGNING_KEY'))
     SecureSession.setup(@redis_url) # only used in dev to wipe session store
 
     configure :development, :test do
