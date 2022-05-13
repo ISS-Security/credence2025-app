@@ -12,6 +12,7 @@ GEM
       bigdecimal
       rexml
     domain_name (0.6.20240107)
+    ffi (1.17.2)
     ffi (1.17.2-aarch64-linux-gnu)
     ffi (1.17.2-aarch64-linux-musl)
     ffi (1.17.2-arm-linux-gnu)
@@ -37,8 +38,8 @@ GEM
     http-cookie (1.0.8)
       domain_name (~> 0.5)
     http-form_data (2.3.0)
-    json (2.11.3)
-    language_server-protocol (3.17.0.4)
+    json (2.12.0)
+    language_server-protocol (3.17.0.5)
     lint_roller (1.1.0)
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
@@ -91,7 +92,7 @@ GEM
     rerun (0.14.0)
       listen (~> 3.0)
     rexml (3.4.1)
-    roda (3.91.0)
+    roda (3.92.0)
       rack
     rubocop (1.75.5)
       json (~> 2.3)
