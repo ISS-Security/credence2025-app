@@ -12,7 +12,6 @@ GEM
       bigdecimal
       rexml
     domain_name (0.6.20240107)
-    ffi (1.17.2)
     ffi (1.17.2-aarch64-linux-gnu)
     ffi (1.17.2-aarch64-linux-musl)
     ffi (1.17.2-arm-linux-gnu)
@@ -47,6 +46,7 @@ GEM
     llhttp-ffi (0.5.1)
       ffi-compiler (~> 1.0)
       rake (~> 13.0)
+    logger (1.7.0)
     method_source (1.1.0)
     minitest (5.25.5)
     minitest-rg (5.3.0)
@@ -143,6 +143,8 @@ DEPENDENCIES
   base64
   figaro (~> 1.2)
   http (~> 5.1)
+  json
+  logger (~> 1.0)
   minitest
   minitest-rg
   pry

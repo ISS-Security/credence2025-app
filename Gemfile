@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 ruby File.read('.ruby-version').strip
 
 # Web
+gem 'logger', '~> 1.0'
 gem 'puma', '~>6.0'
 gem 'rack-session', '~>2.0'
 gem 'redis-rack'
@@ -23,8 +24,9 @@ gem 'redis', '~>5.0'
 gem 'rack-ssl-enforcer'
 gem 'rbnacl', '~>7.1'
 
-# Encoding
+# Data Encoding and Formatting
 gem 'base64'
+gem 'json'
 
 # Debugging
 gem 'pry'

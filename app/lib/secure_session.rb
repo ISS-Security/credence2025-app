@@ -20,7 +20,9 @@ class SecureSession
 
   def self.wipe_redis_sessions
     redis = Redis.new(url: @redis_url)
-    redis.keys.each { |session_id| redis.del session_id }
+    redis.keys.each do |session_id| # rubocop:disable Style/HashEachMethods
+      redis.del session_id
+    end
   end
 
   ## Instance methods to store and retrieve encrypted session data
